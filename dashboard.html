@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">G</div>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="threat-over-time">
+                <h3>Threats over time</h3>
+                <canvas id="threatChart"></canvas>
+            </div>
+            <div class="security-score">
+                <h3>Security Score</h3>
+                <div id="securityScore">25%</div>
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="top-risk-categories">
+                <h3>Top Risk Categories</h3>
+                <canvas id="riskChart"></canvas>
+            </div>
+            <div class="top-vendors">
+                <h3>Top Vendors</h3>
+                <canvas id="vendorChart"></canvas>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

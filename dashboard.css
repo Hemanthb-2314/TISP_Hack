@@ -1,0 +1,193 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1b2a;
+    color: #fff;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+header {
+    background-color: #1b263b;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00f2ff; /* Same as in the provided image */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00f2ff; /* Same as in the provided image */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    height: calc(100vh - 60px); /* Full height minus header height */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Dashboard Styling */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    height: 50%; /* Adjust height as needed */
+    margin-bottom: 20px;
+}
+
+.threat-over-time,
+.security-score {
+    background-color: #1b263b;
+    border-radius: 10px;
+    width: 48%; /* Each section takes up 48% of the dashboard width */
+    padding: 10px;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.threat-over-time h3,
+.security-score h3 {
+    margin-bottom: 10px;
+    color: #00f2ff; /* Same as in the provided image */
+}
+
+.security-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Fill the height of the container */
+}
+
+#securityScore {
+    font-size: 36px;
+    color: #f64747;
+    font-weight: bold;
+}
+
+/* Details Section */
+.details {
+    display: flex;
+    justify-content: space-between;
+    height: 50%; /* Adjust height as needed */
+}
+
+/* Top Risk Categories and Vendors */
+.top-risk-categories,
+.top-vendors {
+    background-color: #1b263b;
+    border-radius: 10px;
+    width: 48%; /* Each section takes up 48% of the details width */
+    padding: 10px;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align the canvas to the left */
+}
+
+/* Canvas Styles for Donut Charts */
+.top-risk-categories canvas,
+.top-vendors canvas {
+    width: 85% !important; /* Fixed width for the donut charts */
+    height: 85% !important; /* Fixed height for the donut charts */
+}
+
+/* Legend Alignment for Donut Charts */
+.legend {
+    align-self: flex-end; /* Align legend text to the right */
+    color: #fff; /* Legend text color */
+    margin-top: 10px; /* Add some margin for spacing */
+}
+
+/* Canvas Styles for Line Chart */
+#threatChart {
+    width: 100% !important; /* Keep the line chart at full width */
+    height: 200px !important; /* Set a reasonable height for the line chart */
+}
+
+/* Blog Page Styling */
+.blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.blog-box {
+    background-color: #1b263b;
+    padding: 40px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+h2 {
+    color: #00f2ff;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00f2ff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #14253d;
+    color: white;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #9aa8c2;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00f2ff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #00d1ff;
+}
+
+.error-message {
+    color: #ff4f4f;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
