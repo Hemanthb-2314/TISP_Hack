@@ -1,0 +1,91 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg'); /* Set your background image URL here */
+    background-size: cover;  /* Ensure the image covers the whole page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    color: #fff;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  /* Full height to match the screen */
+}
+
+.login-box {
+    background-color: rgba(27, 38, 59, 0.9); /* Slight transparency for the form box */
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    color: #00f2ff;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #00f2ff;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5093f1;
+    color: white;
+}
+
+input::placeholder {
+    color: #3e3e3e;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00f2ff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #00d1ff;
+}
+
+.signup-link, .login-link {
+    margin-top: 20px;
+}
+
+.signup-link a, .login-link a {
+    color: #00f2ff;
+    text-decoration: none;
+}
+
+.signup-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #ff4f4f;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
