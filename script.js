@@ -19,6 +19,7 @@ document.getElementById('loginForm').onsubmit = function(event) {
         console.log("Logged in:", { username, email, password });
         document.getElementById('errorMessage').innerText = "";
         alert("Login Successful!");
+        window.location.href = "dashboard.html";
     }
 };
 
@@ -46,4 +47,32 @@ document.getElementById('signupForm').onsubmit = function(event) {
         alert("Signup Successful!");
         window.location.href = "index.html";  // Redirect to login page after successful signup
     }
+};
+
+// Blog Form Submission Handling
+document.getElementById('blogForm').onsubmit = function(event) {
+    event.preventDefault();
+
+    const blogTitle = document.getElementById('blogTitle').value.trim();
+    const blogDescription = document.getElementById('blogDescription').value.trim();
+    const blogImage = document.getElementById('blogImage').files[0];
+    const blogLink = document.getElementById('blogLink').value.trim();
+
+    // Check for empty fields
+    if (!blogTitle || !blogDescription) {
+        alert("Blog title and description are required. Please fill them out.");
+        return;
+    }
+
+    // Simulated blog submission logic
+    console.log('Blog Submitted:', {
+        title: blogTitle,
+        description: blogDescription,
+        image: blogImage ? blogImage.name : "No image uploaded",
+        link: blogLink ? blogLink : "No link provided"
+    });
+
+    alert("Your blog has been submitted!");
+    // Clear form fields after submission
+    document.getElementById('blogForm').reset();
 };
