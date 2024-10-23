@@ -3,9 +3,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d1b2a;
+    background-image: url('background.jpg'); /* Keep this consistent with other pages */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #fff;
-    overflow: hidden; /* Prevent scrolling */
+    
 }
 
 header {
@@ -131,14 +135,14 @@ main {
 }
 
 /* Blog Page Styling */
-.blog-container {
+.blog-container ,.report-form-container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.blog-box {
+.blog-box, .report-form-box {
     background-color: #1b263b;
     padding: 40px;
     border-radius: 10px;
@@ -155,6 +159,7 @@ label {
     display: block;
     margin-bottom: 8px;
     color: #00f2ff;
+    text-align : left;
 }
 
 input, textarea {
@@ -163,12 +168,12 @@ input, textarea {
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
-    background-color: #14253d;
+    background-color: #5093f1;
     color: white;
 }
 
 input::placeholder, textarea::placeholder {
-    color: #9aa8c2;
+    color: #3e3e3e;
 }
 
 button {
